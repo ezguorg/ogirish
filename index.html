@@ -10,6 +10,28 @@
   <link href="favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
   <link rel="stylesheet" href="uikit.css">
   <link rel="stylesheet" href="style.css">
+  <style>
+    .ezgu-floating-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 9999;
+      background-color: #1e87f0;
+      color: #ffffff !important;
+      padding: 10px 16px;
+      border-radius: 6px;
+      text-decoration: none !important;
+      font-size: 14px;
+      font-weight: 600;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+      transition: background-color 0.2s ease, transform 0.2s ease;
+      direction: rtl;
+    }
+    .ezgu-floating-btn:hover {
+      background-color: #0f6ecd;
+      transform: translateY(-2px);
+    }
+  </style>
 </head>
 <body class="tm-isblog">
 
@@ -219,6 +241,10 @@ Saytni barcha do‘stlaringizga tavsiya qilishni unutmang.</textarea>
       </div>
     </div>
   </div>
+
+  <a href="https://www.ezgu.org" target="_blank" rel="noopener noreferrer" class="ezgu-floating-btn">
+    اېزگو ایستکلر سری
+  </a>
 
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
